@@ -159,9 +159,13 @@ public class RefreshHeaderView: RefreshBaseView {
 //        }
         
         //箭头图片
-        arrowImage = UIImageView(image: UIImage(named: "arrow.png"))
-        //UIImageView(image: UIImage(contentsOfFile: filePath!))
-//
+        arrowImage = UIArrowView() //UIImageView(image: UIImage(named: "arrow.png"))
+        arrowImage?.direction = .UP
+        arrowImage?.lineColor = RefreshLabelTextColor
+        arrowImage?.lineThinkness = 2
+        arrowImage?.isGuide = true
+        arrowImage?.arrowHeightRate = 0.3
+        //        arrowImage?.backgroundColor = UIColor.blueColor()
         self.addSubview(arrowImage!)
         arrowImage!.sizeToFit()
         
@@ -173,6 +177,8 @@ public class RefreshHeaderView: RefreshBaseView {
         arrowImage!.snp_makeConstraints { [weak self](make) -> Void in
             make.centerX.equalTo(self!)
             make.centerY.equalTo(self!).offset(-RefreshHeaderHeight / 4)
+            make.width.equalTo(16)
+            make.height.equalTo(28)
         }
         
         activityView.snp_makeConstraints { [weak self](make) -> Void in

@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 #import "FileInfo.h"
 
+//@class FileInfo;
+
 #define SuppressPerformSelectorLeakWarning(Stuff) \
 do { \
 _Pragma("clang diagnostic push") \
@@ -19,8 +21,11 @@ _Pragma("clang diagnostic pop") \
 } while (0)
 
 typedef void (^LoadCompletionHandler)(UIImage*);//定义block结构
-//@interface FileInfo: NSObject
+
+//@interface FileInfo : NSObject
 //
+//@property (nonatomic) NSString * url;
+//@property (nonatomic) UIImage * image;
 //
 //@end
 

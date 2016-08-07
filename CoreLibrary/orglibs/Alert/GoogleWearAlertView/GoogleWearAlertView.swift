@@ -79,22 +79,37 @@ class GoogleWearAlertView: UIView, UIGestureRecognizerDelegate {
         
         // Setup background color and choose icon
         let imageProvided = image != nil
+        
+        let bundle = NSBundle(forClass: GoogleWearAlertView.self)
+        
         switch type {
             case .Error:
                 backgroundColor = UIColor.errorRed()
-                if !imageProvided { self.iconImage = UIImage(named: "errorIcon") }
+                
+                if !imageProvided { self.iconImage = UIImage(named: "errorIcon",inBundle: bundle,compatibleWithTraitCollection: nil) }
                     
             case .Message:
                 backgroundColor = UIColor.messageBlue()
-                if !imageProvided { self.iconImage = UIImage(named: "messageIcon") }
+                if !imageProvided { self.iconImage = UIImage(named: "messageIcon",inBundle: bundle,compatibleWithTraitCollection: nil) }
                     
             case .Success:
                 backgroundColor = UIColor.successGreen()
-                if !imageProvided { self.iconImage = UIImage(named: "successIcon") }
-                
+//                if !imageProvided {
+//                    var resource:String? = nil
+//                    for bundle in NSBundle.allFrameworks(){
+//                        resource = bundle.pathForResource("successIcon@2x.png",ofType:nil)
+//                        if(resource != nil){
+//                            break
+//                        }
+//                    }
+//                    if resource != nil{
+//                        self.iconImage = UIImage(contentsOfFile: resource!)
+//                    }
+                    self.iconImage = UIImage(named: "successIcon",inBundle: bundle,compatibleWithTraitCollection: nil)
+//                }
             case .Warning:
                 backgroundColor = UIColor.warningYellow()
-                if !imageProvided { self.iconImage = UIImage(named: "warningIcon") }
+                if !imageProvided { self.iconImage = UIImage(named: "warningIcon",inBundle: bundle,compatibleWithTraitCollection: nil) }
             
 //            default:
 //                NSLog("Unknown message type provided")

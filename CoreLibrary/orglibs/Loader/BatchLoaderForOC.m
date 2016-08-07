@@ -56,7 +56,7 @@ NSMutableDictionary<NSString*,NSMutableArray*>* callBackDic;
         imageCacheDic = [[NSMutableDictionary alloc]init];
     }
     UIImage* image = [imageCacheDic objectForKey:url];
-    if(image != nil){
+    if(image != NULL){
         [BatchLoaderForOC sendActionByUrl:target andSelection:action andUrl:url andImage:image];//直接回调
         return;
     }
@@ -66,7 +66,7 @@ NSMutableDictionary<NSString*,NSMutableArray*>* callBackDic;
     }else{
         image = [UIImage imageNamed:url];
         [BatchLoaderForOC sendActionByUrl:target andSelection:action andUrl:url andImage:image];//本地调用
-        image != nil ? [imageCacheDic setObject:image forKey:url] : "";//存入缓存
+        image != NULL ? [imageCacheDic setObject:image forKey:url] : "";//存入缓存
     }
 }
 
@@ -102,7 +102,7 @@ NSMutableDictionary<NSString*,NSMutableArray*>* callBackDic;
 }
 
 +(void)sendActionByUrl:(id)target andSelection:(SEL)action andUrl:(NSString*)url andImage:(UIImage*)image{
-    if(action!=NULL){
+    if(action != NULL){
         FileInfo* info = [[FileInfo alloc]init];
         info.url = url;
         info.image = image;

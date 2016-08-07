@@ -27,30 +27,56 @@ public class UIArrowView: UIControl {
         fatalError("init(coder:) has not been implemented")
     }
 
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        setNeedsDisplay()
+    }
+    
     //绘制三角形实体
     public override func drawRect(rect: CGRect) {
         let linePath = UIBezierPath()
         linePath.lineWidth = lineThinkness
         linePath.lineCapStyle = CGLineCap.Round//笔触为圆形
+        
         if direction == ArrowDirect.LEFT{
-            linePath.moveToPoint(CGPoint(x: rect.width - lineThinkness / 2, y: lineThinkness / 2))
+            let xOffSet = rect.width * (1 - arrowHeightRate)
+            linePath.moveToPoint(CGPoint(x: rect.width - lineThinkness / 2 - xOffSet, y: lineThinkness / 2))
             linePath.addLineToPoint(CGPoint(x: lineThinkness / 2,y: rect.height / 2))
-            linePath.addLineToPoint(CGPoint(x: rect.width - lineThinkness / 2, y: rect.height - lineThinkness / 2))
+            linePath.addLineToPoint(CGPoint(x: rect.width - lineThinkness / 2 - xOffSet, y: rect.height - lineThinkness / 2))
+            if isGuide {
+                linePath.moveToPoint(CGPoint(x: lineThinkness / 2,y: rect.height / 2))
+                linePath.addLineToPoint(CGPoint(x: rect.width - lineThinkness / 2,y: rect.height / 2))
+            }
         }else if direction == ArrowDirect.RIGHT{
-            linePath.moveToPoint(CGPoint(x: lineThinkness / 2, y: lineThinkness / 2))
+            let xOffSet = rect.width * (1 - arrowHeightRate)
+            linePath.moveToPoint(CGPoint(x: lineThinkness / 2 + xOffSet, y: lineThinkness / 2))
             linePath.addLineToPoint(CGPoint(x: rect.width - lineThinkness / 2,y: rect.height / 2))
-            linePath.addLineToPoint(CGPoint(x: lineThinkness / 2, y: rect.height - lineThinkness / 2))
+            linePath.addLineToPoint(CGPoint(x: lineThinkness / 2 + xOffSet, y: rect.height - lineThinkness / 2))
+            if isGuide {
+                linePath.moveToPoint(CGPoint(x: rect.width - lineThinkness / 2,y: rect.height / 2))
+                linePath.addLineToPoint(CGPoint(x: lineThinkness / 2,y: rect.height / 2))
+            }
         }else if direction == ArrowDirect.UP{
-            linePath.moveToPoint(CGPoint(x: lineThinkness / 2, y: rect.height - lineThinkness / 2))
+            let yOffSet = rect.height * (1 - arrowHeightRate)
+            linePath.moveToPoint(CGPoint(x: lineThinkness / 2, y: rect.height - lineThinkness / 2 - yOffSet))
             linePath.addLineToPoint(CGPoint(x: rect.width / 2, y: lineThinkness / 2))
-            linePath.addLineToPoint(CGPoint(x: rect.width - lineThinkness / 2, y: rect.height - lineThinkness / 2))
+            linePath.addLineToPoint(CGPoint(x: rect.width - lineThinkness / 2, y: rect.height - lineThinkness / 2 - yOffSet))
+            if isGuide {
+                linePath.moveToPoint(CGPoint(x: rect.width / 2, y: lineThinkness / 2))
+                linePath.addLineToPoint(CGPoint(x: rect.width / 2,y: rect.height - lineThinkness / 2))
+            }
         }else if direction == ArrowDirect.DOWN{
-            linePath.moveToPoint(CGPoint(x: lineThinkness / 2, y: lineThinkness / 2))
+            let yOffSet = rect.height * (1 - arrowHeightRate)
+            linePath.moveToPoint(CGPoint(x: lineThinkness / 2, y: lineThinkness / 2 + yOffSet))
             linePath.addLineToPoint(CGPoint(x: rect.width / 2, y: rect.height - lineThinkness / 2))
-            linePath.addLineToPoint(CGPoint(x: rect.width - lineThinkness / 2, y: lineThinkness / 2))
+            linePath.addLineToPoint(CGPoint(x: rect.width - lineThinkness / 2, y: lineThinkness / 2 + yOffSet))
+            if isGuide {
+                linePath.moveToPoint(CGPoint(x: rect.width / 2,y: rect.height - lineThinkness / 2))
+                linePath.addLineToPoint(CGPoint(x: rect.width / 2, y: lineThinkness / 2))
+            }
         }
         
-        if(isClosed){
+        if(isClosed && !isGuide){
             linePath.closePath() //封闭图形
         }
         lineColor.setStroke()
@@ -68,35 +94,45 @@ public class UIArrowView: UIControl {
     
     public var direction:ArrowDirect = .LEFT{//默认向左
         didSet{
-            setNeedsDisplay()
+            setNeedsLayout()
         }
     }
     
     public var lineColor:UIColor = UIColor.blackColor(){//线条色
         didSet{
-            setNeedsDisplay()
+            setNeedsLayout()
         }
     }
     
     public var lineThinkness:CGFloat = 1{//线条粗细
         didSet{
-            setNeedsDisplay()
+            setNeedsLayout()
         }
     }
     
     public var fillColor:UIColor = UIColor.clearColor(){//填充
         didSet{
-            setNeedsDisplay()
+            setNeedsLayout()
         }
     }
     
     public var isClosed:Bool = false{//是否封闭三角形
         didSet{
-            setNeedsDisplay()
+            setNeedsLayout()
         }
     }
     
+    public var isGuide:Bool = false{//导视类型 画线且有尾巴
+        didSet{
+            setNeedsLayout()
+        }
+    }
     
+    public var arrowHeightRate:CGFloat = 1{ //箭头区域比例
+        didSet{
+            setNeedsLayout()
+        }
+    }
     
     
     

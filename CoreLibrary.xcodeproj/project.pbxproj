@@ -13,7 +13,6 @@
 		8437DEFA1D534DAA00623EAA /* GoogleWearAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437DDA91D534DA900623EAA /* GoogleWearAlertView.swift */; };
 		8437DEFB1D534DAA00623EAA /* errorIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8437DDAB1D534DA900623EAA /* errorIcon@2x.png */; };
 		8437DEFC1D534DAA00623EAA /* messageIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8437DDAC1D534DA900623EAA /* messageIcon@2x.png */; };
-		8437DEFD1D534DAA00623EAA /* successIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8437DDAD1D534DA900623EAA /* successIcon@2x.png */; };
 		8437DEFE1D534DAA00623EAA /* warningIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8437DDAE1D534DA900623EAA /* warningIcon@2x.png */; };
 		8437DEFF1D534DAA00623EAA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8437DDB01D534DAA00623EAA /* Info.plist */; };
 		8437DF011D534DAA00623EAA /* JLToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437DDB21D534DAA00623EAA /* JLToast.swift */; };
@@ -200,8 +199,6 @@
 		8437DFB71D534DAA00623EAA /* BatchLoaderForOC.h in Headers */ = {isa = PBXBuildFile; fileRef = 8437DE8E1D534DAA00623EAA /* BatchLoaderForOC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8437DFB81D534DAA00623EAA /* BatchLoaderForOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437DE8F1D534DAA00623EAA /* BatchLoaderForOC.m */; };
 		8437DFB91D534DAA00623EAA /* BatchLoaderForSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437DE901D534DAA00623EAA /* BatchLoaderForSwift.swift */; };
-		8437DFBA1D534DAA00623EAA /* FileInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8437DE911D534DAA00623EAA /* FileInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8437DFBB1D534DAA00623EAA /* FileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437DE921D534DAA00623EAA /* FileInfo.m */; };
 		8437DFBC1D534DAA00623EAA /* MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8437DE941D534DAA00623EAA /* MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8437DFBD1D534DAA00623EAA /* MJExtensionConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 8437DE951D534DAA00623EAA /* MJExtensionConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8437DFBE1D534DAA00623EAA /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437DE961D534DAA00623EAA /* MJExtensionConst.m */; };
@@ -235,7 +232,6 @@
 		8437DFDA1D534DAA00623EAA /* orglibs.h in Headers */ = {isa = PBXBuildFile; fileRef = 8437DEB31D534DAA00623EAA /* orglibs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8437DFDB1D534DAA00623EAA /* DWPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8437DEB51D534DAA00623EAA /* DWPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8437DFDC1D534DAA00623EAA /* DWPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437DEB61D534DAA00623EAA /* DWPageControl.m */; };
-		8437DFDD1D534DAA00623EAA /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8437DEB81D534DAA00623EAA /* arrow@2x.png */; };
 		8437DFDE1D534DAA00623EAA /* RefreshBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437DEB91D534DAA00623EAA /* RefreshBaseView.swift */; };
 		8437DFDF1D534DAA00623EAA /* RefreshConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437DEBA1D534DAA00623EAA /* RefreshConst.swift */; };
 		8437DFE01D534DAA00623EAA /* RefreshContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437DEBB1D534DAA00623EAA /* RefreshContainer.swift */; };
@@ -292,6 +288,9 @@
 		8437E0131D534DAA00623EAA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437DEF41D534DAA00623EAA /* SwiftyJSON.swift */; };
 		8437E0141D534DAA00623EAA /* XDPopupListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8437DEF61D534DAA00623EAA /* XDPopupListView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8437E0151D534DAA00623EAA /* XDPopupListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437DEF71D534DAA00623EAA /* XDPopupListView.m */; };
+		A9F5DCBC1D558E98001D8BD5 /* successIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9F5DCBB1D558E98001D8BD5 /* successIcon@2x.png */; };
+		A9F5DCED1D55B78A001D8BD5 /* FileInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F5DCEB1D55B78A001D8BD5 /* FileInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9F5DCEE1D55B78A001D8BD5 /* FileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F5DCEC1D55B78A001D8BD5 /* FileInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -303,7 +302,6 @@
 		8437DDA91D534DA900623EAA /* GoogleWearAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleWearAlertView.swift; sourceTree = "<group>"; };
 		8437DDAB1D534DA900623EAA /* errorIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "errorIcon@2x.png"; sourceTree = "<group>"; };
 		8437DDAC1D534DA900623EAA /* messageIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messageIcon@2x.png"; sourceTree = "<group>"; };
-		8437DDAD1D534DA900623EAA /* successIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "successIcon@2x.png"; sourceTree = "<group>"; };
 		8437DDAE1D534DA900623EAA /* warningIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warningIcon@2x.png"; sourceTree = "<group>"; };
 		8437DDB01D534DAA00623EAA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8437DDB21D534DAA00623EAA /* JLToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLToast.swift; sourceTree = "<group>"; };
@@ -495,8 +493,6 @@
 		8437DE8E1D534DAA00623EAA /* BatchLoaderForOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatchLoaderForOC.h; sourceTree = "<group>"; };
 		8437DE8F1D534DAA00623EAA /* BatchLoaderForOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatchLoaderForOC.m; sourceTree = "<group>"; };
 		8437DE901D534DAA00623EAA /* BatchLoaderForSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatchLoaderForSwift.swift; sourceTree = "<group>"; };
-		8437DE911D534DAA00623EAA /* FileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileInfo.h; sourceTree = "<group>"; };
-		8437DE921D534DAA00623EAA /* FileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileInfo.m; sourceTree = "<group>"; };
 		8437DE941D534DAA00623EAA /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
 		8437DE951D534DAA00623EAA /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
 		8437DE961D534DAA00623EAA /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
@@ -530,7 +526,6 @@
 		8437DEB31D534DAA00623EAA /* orglibs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = orglibs.h; sourceTree = "<group>"; };
 		8437DEB51D534DAA00623EAA /* DWPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWPageControl.h; sourceTree = "<group>"; };
 		8437DEB61D534DAA00623EAA /* DWPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWPageControl.m; sourceTree = "<group>"; };
-		8437DEB81D534DAA00623EAA /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
 		8437DEB91D534DAA00623EAA /* RefreshBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshBaseView.swift; sourceTree = "<group>"; };
 		8437DEBA1D534DAA00623EAA /* RefreshConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshConst.swift; sourceTree = "<group>"; };
 		8437DEBB1D534DAA00623EAA /* RefreshContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshContainer.swift; sourceTree = "<group>"; };
@@ -587,6 +582,9 @@
 		8437DEF41D534DAA00623EAA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		8437DEF61D534DAA00623EAA /* XDPopupListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDPopupListView.h; sourceTree = "<group>"; };
 		8437DEF71D534DAA00623EAA /* XDPopupListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDPopupListView.m; sourceTree = "<group>"; };
+		A9F5DCBB1D558E98001D8BD5 /* successIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "successIcon@2x.png"; sourceTree = "<group>"; };
+		A9F5DCEB1D55B78A001D8BD5 /* FileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileInfo.h; sourceTree = "<group>"; };
+		A9F5DCEC1D55B78A001D8BD5 /* FileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -691,9 +689,9 @@
 		8437DDAA1D534DA900623EAA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A9F5DCBB1D558E98001D8BD5 /* successIcon@2x.png */,
 				8437DDAB1D534DA900623EAA /* errorIcon@2x.png */,
 				8437DDAC1D534DA900623EAA /* messageIcon@2x.png */,
-				8437DDAD1D534DA900623EAA /* successIcon@2x.png */,
 				8437DDAE1D534DA900623EAA /* warningIcon@2x.png */,
 			);
 			path = Resources;
@@ -1125,11 +1123,11 @@
 		8437DE8D1D534DAA00623EAA /* Loader */ = {
 			isa = PBXGroup;
 			children = (
+				A9F5DCEB1D55B78A001D8BD5 /* FileInfo.h */,
+				A9F5DCEC1D55B78A001D8BD5 /* FileInfo.m */,
 				8437DE8E1D534DAA00623EAA /* BatchLoaderForOC.h */,
 				8437DE8F1D534DAA00623EAA /* BatchLoaderForOC.m */,
 				8437DE901D534DAA00623EAA /* BatchLoaderForSwift.swift */,
-				8437DE911D534DAA00623EAA /* FileInfo.h */,
-				8437DE921D534DAA00623EAA /* FileInfo.m */,
 			);
 			path = Loader;
 			sourceTree = "<group>";
@@ -1190,7 +1188,6 @@
 		8437DEB71D534DAA00623EAA /* Refresh */ = {
 			isa = PBXGroup;
 			children = (
-				8437DEB81D534DAA00623EAA /* arrow@2x.png */,
 				8437DEB91D534DAA00623EAA /* RefreshBaseView.swift */,
 				8437DEBA1D534DAA00623EAA /* RefreshConst.swift */,
 				8437DEBB1D534DAA00623EAA /* RefreshContainer.swift */,
@@ -1321,7 +1318,6 @@
 				8437DF071D534DAA00623EAA /* CustomBadge.h in Headers */,
 				8437DF811D534DAA00623EAA /* QBAssetsViewController.h in Headers */,
 				8437DFE41D534DAA00623EAA /* UITableView+SDAutoTableViewCellHeight.h in Headers */,
-				8437DFBA1D534DAA00623EAA /* FileInfo.h in Headers */,
 				8437DFCD1D534DAA00623EAA /* NSObject+MJProperty.h in Headers */,
 				8437DFA31D534DAA00623EAA /* IQKeyboardManager.h in Headers */,
 				8437DF871D534DAA00623EAA /* QBImagePickerController.h in Headers */,
@@ -1391,6 +1387,7 @@
 				8437DFC91D534DAA00623EAA /* NSObject+MJCoding.h in Headers */,
 				8437DFBC1D534DAA00623EAA /* MJExtension.h in Headers */,
 				8437DF551D534DAA00623EAA /* DeviceUtil.h in Headers */,
+				A9F5DCED1D55B78A001D8BD5 /* FileInfo.h in Headers */,
 				8437DD9C1D534D7D00623EAA /* CoreLibrary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1461,16 +1458,15 @@
 				8437DEFB1D534DAA00623EAA /* errorIcon@2x.png in Resources */,
 				8437DF6E1D534DAA00623EAA /* Images.xcassets in Resources */,
 				8437DF6F1D534DAA00623EAA /* Info.plist in Resources */,
-				8437DEFD1D534DAA00623EAA /* successIcon@2x.png in Resources */,
 				8437DF351D534DAA00623EAA /* fontawesome-webfont.ttf in Resources */,
 				8437DF791D534DAA00623EAA /* QBImagePicker.strings in Resources */,
 				8437DF321D534DAA00623EAA /* Info.plist in Resources */,
+				A9F5DCBC1D558E98001D8BD5 /* successIcon@2x.png in Resources */,
 				8437DEFE1D534DAA00623EAA /* warningIcon@2x.png in Resources */,
 				8437E0001D534DAA00623EAA /* Info.plist in Resources */,
 				8437DF7A1D534DAA00623EAA /* Info.plist in Resources */,
 				8437DFB21D534DAA00623EAA /* IQKeyboardManager.bundle in Resources */,
 				8437E0111D534DAA00623EAA /* Info-watchOS.plist in Resources */,
-				8437DFDD1D534DAA00623EAA /* arrow@2x.png in Resources */,
 				8437E00F1D534DAA00623EAA /* Info-OSX.plist in Resources */,
 				8437E00E1D534DAA00623EAA /* Info-iOS.plist in Resources */,
 				8437DEFF1D534DAA00623EAA /* Info.plist in Resources */,
@@ -1509,6 +1505,7 @@
 				8437DF341D534DAA00623EAA /* CMPopTipView.m in Sources */,
 				8437DF2F1D534DAA00623EAA /* NSLock+Bond.swift in Sources */,
 				8437DFFE1D534DAA00623EAA /* Debugging.swift in Sources */,
+				A9F5DCEE1D55B78A001D8BD5 /* FileInfo.m in Sources */,
 				8437DF4F1D534DAA00623EAA /* UIArrowView.swift in Sources */,
 				8437DFF31D534DAA00623EAA /* SDCollectionViewCell.m in Sources */,
 				8437DF101D534DAA00623EAA /* MutableObservable.swift in Sources */,
@@ -1589,7 +1586,6 @@
 				8437DF0A1D534DAA00623EAA /* BindableType.swift in Sources */,
 				8437DFD71D534DAA00623EAA /* MMDrawerVisualState.m in Sources */,
 				8437DF151D534DAA00623EAA /* OptionalType.swift in Sources */,
-				8437DFBB1D534DAA00623EAA /* FileInfo.m in Sources */,
 				8437DF771D534DAA00623EAA /* SheetController.swift in Sources */,
 				8437DF211D534DAA00623EAA /* UINavigationBar+Bond.swift in Sources */,
 				8437DF021D534DAA00623EAA /* JLToastCenter.swift in Sources */,

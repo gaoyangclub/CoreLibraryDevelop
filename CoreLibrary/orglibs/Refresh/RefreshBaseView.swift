@@ -67,7 +67,7 @@ public class RefreshBaseView: UIView {
     
     // 内部的控件
     var statusLabel:UILabel!
-    var arrowImage:UIImageView?
+    var arrowImage:UIArrowView?//UIImageView?
     var activityView:UIActivityIndicatorView!
     
     //回调
