@@ -93,7 +93,7 @@ public class UIGroupLineChart: UIView,UIGestureRecognizerDelegate {
 //            panGestrue.enabled = false
             panGestrue.minimumNumberOfTouches = 1
             panGestrue.maximumNumberOfTouches = 1
-//            panGestrue.delegate = self
+            panGestrue.delegate = self
         }
         if tapGestrue == nil{
             tapGestrue = UITapGestureRecognizer(target: self, action: "tapHandler:")
@@ -102,70 +102,87 @@ public class UIGroupLineChart: UIView,UIGestureRecognizerDelegate {
         }
     }
     
-    private var prevTouchPoint:CGPoint!
+    //设置是否共存外部交互
+    public func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        let translation:CGPoint = panGestrue.translationInView(self);
+        let absX:CGFloat = fabs(translation.x);
+        let absY:CGFloat = fabs(translation.y);
+        
+        // 设置滑动有效距离
+        //        if (MAX(absX, absY) < 10){
+        
+        if (absX > absY ) {//左右滑动阻止外部交互
+            return false;
+        } else if (absY > absX) {//上下滑动共存
+            return true;
+        }
+        return true;
+    }
+    
+//    private var prevTouchPoint:CGPoint!
 //    private var hasPan:Bool = false
 //    private var touches:Set<NSObject>!
 //    private var event:UIEvent!
-    public override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        //            super.touchesMoved(Set<NSObject>(), withEvent: event)
-//        self.touches = touches
-//        self.event = event
-        if touches.count > 0{
-            let nowTouch = touches[touches.startIndex] as UITouch
-            let nowPoint = nowTouch.locationInView(self)
-            
-            let dirtX = abs(nowPoint.x - prevTouchPoint.x)
-            let dirtY = abs(nowPoint.y - prevTouchPoint.y)
-//            println("dirtX:\(dirtX)  dirtY:\(dirtY)")
-            if  dirtX > dirtY {//横向移动
-//                if !hasPan{
-//                    hasPan = true
-////                    chartLabelView.addGestureRecognizer(panGestrue)
-//                }
-                panGestrue.enabled = true
-//                println("横向注册手势")
-            }else{
-                panGestrue.enabled = false
-//                println("纵向移动")
-            }
-        }
-//        println("滑动中")
-    }
-    
-    public override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-//        self.touches = touches
-//        self.event = event
-        if touches.count > 0{
-            let prevTouch = touches[touches.startIndex] as UITouch
-            prevTouchPoint = prevTouch.locationInView(self)
-        }
-//        println("开始移动")
-    }
+//    public override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+//        //            super.touchesMoved(Set<NSObject>(), withEvent: event)
+////        self.touches = touches
+////        self.event = event
+//        if touches.count > 0{
+//            let nowTouch = touches[touches.startIndex] as UITouch
+//            let nowPoint = nowTouch.locationInView(self)
+//            
+//            let dirtX = abs(nowPoint.x - prevTouchPoint.x)
+//            let dirtY = abs(nowPoint.y - prevTouchPoint.y)
+////            println("dirtX:\(dirtX)  dirtY:\(dirtY)")
+//            if  dirtX > dirtY {//横向移动
+////                if !hasPan{
+////                    hasPan = true
+//////                    chartLabelView.addGestureRecognizer(panGestrue)
+////                }
+//                panGestrue.enabled = true
+////                println("横向注册手势")
+//            }else{
+//                panGestrue.enabled = false
+////                println("纵向移动")
+//            }
+//        }
+////        println("滑动中")
+//    }
+//    
+//    public override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+////        self.touches = touches
+////        self.event = event
+//        if touches.count > 0{
+//            let prevTouch = touches[touches.startIndex] as UITouch
+//            prevTouchPoint = prevTouch.locationInView(self)
+//        }
+////        println("开始移动")
+//    }
+//////
+//    public override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
+////        super.touchesCancelled(Set<NSObject>(), withEvent: event)
+//        resumePan()
+//    }
 ////
-    public override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
-//        super.touchesCancelled(Set<NSObject>(), withEvent: event)
-        resumePan()
-    }
-//
-    public override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-//        super.touchesEnded(Set<NSObject>(), withEvent: event)
-        resumePan()
-    }
+//    public override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+////        super.touchesEnded(Set<NSObject>(), withEvent: event)
+//        resumePan()
+//    }
     
 //    func tapHandler(sender:UITapGestureRecognizer){
 //        println(sender)
 //    }
     
     //横向滑动可以 纵向向外冒泡
-    public func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool{
-//        var translation:CGPoint = panGestrue.velocityInView(chartLabelView)
-//        println(translation)
-        
-        let nowPoint:CGPoint = touch.locationInView(self)
-        let prevPoint:CGPoint = touch.previousLocationInView(self)
-        print("nowPoint:\(nowPoint)  prevPoint:\(prevPoint)")
-        return false//CGPointEqualToPoint(nowPoint,prevPoint) || abs(nowPoint.x - prevPoint.x) > abs(nowPoint.y - prevPoint.y)
-    }
+//    public func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool{
+////        var translation:CGPoint = panGestrue.velocityInView(chartLabelView)
+////        println(translation)
+//        
+//        let nowPoint:CGPoint = touch.locationInView(self)
+//        let prevPoint:CGPoint = touch.previousLocationInView(self)
+//        print("nowPoint:\(nowPoint)  prevPoint:\(prevPoint)")
+//        return false//CGPointEqualToPoint(nowPoint,prevPoint) || abs(nowPoint.x - prevPoint.x) > abs(nowPoint.y - prevPoint.y)
+//    }
     
     func tapHandler(sender:UIGestureRecognizer){
         if sender.numberOfTouches() > 0{
@@ -248,18 +265,18 @@ public class UIGroupLineChart: UIView,UIGestureRecognizerDelegate {
         gestrueArea.removeAllSubViews()
         delegate?.touchChartLineEnd?()//交互结束
         
-        resumePan()
+//        resumePan()
     }
     
-    private func resumePan(){
-//        hasPan = false
-        if (panGestrue != nil){
-            panGestrue.enabled = true
-//            println("恢复横向手势")
-            //            chartLabelView.removeGestureRecognizer(panGestrue)
-        }
-        prevTouchPoint = nil
-    }
+//    private func resumePan(){
+////        hasPan = false
+//        if (panGestrue != nil){
+//            panGestrue.enabled = true
+////            println("恢复横向手势")
+//            //            chartLabelView.removeGestureRecognizer(panGestrue)
+//        }
+//        prevTouchPoint = nil
+//    }
     
     private func initChartLabel(){
         if chartLabelView == nil{

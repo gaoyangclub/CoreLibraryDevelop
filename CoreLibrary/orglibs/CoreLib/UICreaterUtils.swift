@@ -20,11 +20,19 @@ public class UICreaterUtils: AnyObject {
     public static let colorFlat:UIColor = UIColor(red: 119/255, green: 119/255, blue: 119/255, alpha: 1)
     
     public static func createLabel(size:CGFloat,_ color:UIColor,_ text:String = "",_ sizeToFit:Bool = false,_ parent:UIView? = nil)->UILabel{
+        return createLabel(nil,size,color,text,sizeToFit,parent);
+    }
+    
+    public static func createLabel(fontName:String?,_ size:CGFloat,_ color:UIColor,_ text:String = "",_ sizeToFit:Bool = false,_ parent:UIView? = nil)->UILabel{
         let uiLabel = UILabel()
         if parent != nil{
             parent?.addSubview(uiLabel)
         }
-        uiLabel.font = UIFont.systemFontOfSize(size)//UIFont(name: "Arial Rounded MT Bold", size: size)
+        if(fontName != nil){
+            uiLabel.font = UIFont(name: fontName!, size: size)
+        }else{
+            uiLabel.font = UIFont.systemFontOfSize(size)//UIFont(name: "Arial Rounded MT Bold", size: size)
+        }
         uiLabel.textColor = color
         uiLabel.text = text
         uiLabel.userInteractionEnabled = false //默认没有交互
@@ -33,4 +41,14 @@ public class UICreaterUtils: AnyObject {
         }
         return uiLabel
     }
+    
+    public static func createNavigationNormalButtonItem(themeColor:UIColor,_ font:UIFont,_ text:String,_ target:AnyObject,
+        _ action:Selector)->UIBarButtonItem{
+            let buttonItem:UIBarButtonItem = UIBarButtonItem(title: text, style: UIBarButtonItemStyle.Plain, target: target, action: action);
+            
+            buttonItem.setTitleTextAttributes([NSFontAttributeName:font], forState: UIControlState.Normal);
+            buttonItem.tintColor = themeColor;
+            return buttonItem;
+    }
+    
 }

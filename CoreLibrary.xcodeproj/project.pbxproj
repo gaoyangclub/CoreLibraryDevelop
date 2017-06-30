@@ -95,7 +95,6 @@
 		8437DF4F1D534DAA00623EAA /* UIArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437DE0B1D534DAA00623EAA /* UIArrowView.swift */; };
 		8437DF501D534DAA00623EAA /* UIColumnChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437DE0C1D534DAA00623EAA /* UIColumnChart.swift */; };
 		8437DF511D534DAA00623EAA /* UICreaterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437DE0D1D534DAA00623EAA /* UICreaterUtils.swift */; };
-		8437DF521D534DAA00623EAA /* UIFlatImageTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437DE0E1D534DAA00623EAA /* UIFlatImageTabItem.swift */; };
 		8437DF531D534DAA00623EAA /* UIGroupLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437DE0F1D534DAA00623EAA /* UIGroupLineChart.swift */; };
 		8437DF541D534DAA00623EAA /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437DE101D534DAA00623EAA /* UIViewExtension.swift */; };
 		8437DF551D534DAA00623EAA /* DeviceUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 8437DE121D534DAA00623EAA /* DeviceUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -238,10 +237,6 @@
 		8437DFE11D534DAA00623EAA /* RefreshFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437DEBC1D534DAA00623EAA /* RefreshFooterView.swift */; };
 		8437DFE21D534DAA00623EAA /* RefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437DEBD1D534DAA00623EAA /* RefreshHeaderView.swift */; };
 		8437DFE31D534DAA00623EAA /* RefreshTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437DEBE1D534DAA00623EAA /* RefreshTableViewController.swift */; };
-		8437DFE41D534DAA00623EAA /* UITableView+SDAutoTableViewCellHeight.h in Headers */ = {isa = PBXBuildFile; fileRef = 8437DEC01D534DAA00623EAA /* UITableView+SDAutoTableViewCellHeight.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8437DFE51D534DAA00623EAA /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437DEC11D534DAA00623EAA /* UITableView+SDAutoTableViewCellHeight.m */; };
-		8437DFE61D534DAA00623EAA /* UIView+SDAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 8437DEC21D534DAA00623EAA /* UIView+SDAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8437DFE71D534DAA00623EAA /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437DEC31D534DAA00623EAA /* UIView+SDAutoLayout.m */; };
 		8437DFE81D534DAA00623EAA /* NSData+SDDataCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 8437DEC51D534DAA00623EAA /* NSData+SDDataCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8437DFE91D534DAA00623EAA /* NSData+SDDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437DEC61D534DAA00623EAA /* NSData+SDDataCache.m */; };
 		8437DFEA1D534DAA00623EAA /* TAAbstractDotView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8437DEC81D534DAA00623EAA /* TAAbstractDotView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -288,6 +283,10 @@
 		8437E0131D534DAA00623EAA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437DEF41D534DAA00623EAA /* SwiftyJSON.swift */; };
 		8437E0141D534DAA00623EAA /* XDPopupListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8437DEF61D534DAA00623EAA /* XDPopupListView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8437E0151D534DAA00623EAA /* XDPopupListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437DEF71D534DAA00623EAA /* XDPopupListView.m */; };
+		84E6D0F41D61B987005859B7 /* UITableView+SDAutoTableViewCellHeight.h in Headers */ = {isa = PBXBuildFile; fileRef = 84E6D0F01D61B987005859B7 /* UITableView+SDAutoTableViewCellHeight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84E6D0F51D61B987005859B7 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E6D0F11D61B987005859B7 /* UITableView+SDAutoTableViewCellHeight.m */; };
+		84E6D0F61D61B987005859B7 /* UIView+SDAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 84E6D0F21D61B987005859B7 /* UIView+SDAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84E6D0F71D61B987005859B7 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E6D0F31D61B987005859B7 /* UIView+SDAutoLayout.m */; };
 		A9F5DCBC1D558E98001D8BD5 /* successIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9F5DCBB1D558E98001D8BD5 /* successIcon@2x.png */; };
 		A9F5DCED1D55B78A001D8BD5 /* FileInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F5DCEB1D55B78A001D8BD5 /* FileInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9F5DCEE1D55B78A001D8BD5 /* FileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F5DCEC1D55B78A001D8BD5 /* FileInfo.m */; };
@@ -384,7 +383,6 @@
 		8437DE0B1D534DAA00623EAA /* UIArrowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIArrowView.swift; sourceTree = "<group>"; };
 		8437DE0C1D534DAA00623EAA /* UIColumnChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColumnChart.swift; sourceTree = "<group>"; };
 		8437DE0D1D534DAA00623EAA /* UICreaterUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICreaterUtils.swift; sourceTree = "<group>"; };
-		8437DE0E1D534DAA00623EAA /* UIFlatImageTabItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFlatImageTabItem.swift; sourceTree = "<group>"; };
 		8437DE0F1D534DAA00623EAA /* UIGroupLineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGroupLineChart.swift; sourceTree = "<group>"; };
 		8437DE101D534DAA00623EAA /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		8437DE121D534DAA00623EAA /* DeviceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceUtil.h; sourceTree = "<group>"; };
@@ -532,10 +530,6 @@
 		8437DEBC1D534DAA00623EAA /* RefreshFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshFooterView.swift; sourceTree = "<group>"; };
 		8437DEBD1D534DAA00623EAA /* RefreshHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshHeaderView.swift; sourceTree = "<group>"; };
 		8437DEBE1D534DAA00623EAA /* RefreshTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshTableViewController.swift; sourceTree = "<group>"; };
-		8437DEC01D534DAA00623EAA /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
-		8437DEC11D534DAA00623EAA /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
-		8437DEC21D534DAA00623EAA /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
-		8437DEC31D534DAA00623EAA /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
 		8437DEC51D534DAA00623EAA /* NSData+SDDataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SDDataCache.h"; sourceTree = "<group>"; };
 		8437DEC61D534DAA00623EAA /* NSData+SDDataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SDDataCache.m"; sourceTree = "<group>"; };
 		8437DEC81D534DAA00623EAA /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
@@ -582,6 +576,10 @@
 		8437DEF41D534DAA00623EAA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		8437DEF61D534DAA00623EAA /* XDPopupListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDPopupListView.h; sourceTree = "<group>"; };
 		8437DEF71D534DAA00623EAA /* XDPopupListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDPopupListView.m; sourceTree = "<group>"; };
+		84E6D0F01D61B987005859B7 /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
+		84E6D0F11D61B987005859B7 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
+		84E6D0F21D61B987005859B7 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
+		84E6D0F31D61B987005859B7 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
 		A9F5DCBB1D558E98001D8BD5 /* successIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "successIcon@2x.png"; sourceTree = "<group>"; };
 		A9F5DCEB1D55B78A001D8BD5 /* FileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileInfo.h; sourceTree = "<group>"; };
 		A9F5DCEC1D55B78A001D8BD5 /* FileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileInfo.m; sourceTree = "<group>"; };
@@ -646,9 +644,9 @@
 				8437DE931D534DAA00623EAA /* MJExtension */,
 				8437DEA91D534DAA00623EAA /* MMDrawerController */,
 				8437DEB31D534DAA00623EAA /* orglibs.h */,
+				84E6D0EF1D61B987005859B7 /* SDAutoLayout */,
 				8437DEB41D534DAA00623EAA /* PageControl */,
 				8437DEB71D534DAA00623EAA /* Refresh */,
-				8437DEBF1D534DAA00623EAA /* SDAutoLayout */,
 				8437DEC41D534DAA00623EAA /* SDCycleScrollView */,
 				8437DED61D534DAA00623EAA /* SnapKit */,
 				8437DEE61D534DAA00623EAA /* SwiftScanController */,
@@ -864,7 +862,6 @@
 				8437DE0B1D534DAA00623EAA /* UIArrowView.swift */,
 				8437DE0C1D534DAA00623EAA /* UIColumnChart.swift */,
 				8437DE0D1D534DAA00623EAA /* UICreaterUtils.swift */,
-				8437DE0E1D534DAA00623EAA /* UIFlatImageTabItem.swift */,
 				8437DE0F1D534DAA00623EAA /* UIGroupLineChart.swift */,
 				8437DE101D534DAA00623EAA /* UIViewExtension.swift */,
 			);
@@ -1198,17 +1195,6 @@
 			path = Refresh;
 			sourceTree = "<group>";
 		};
-		8437DEBF1D534DAA00623EAA /* SDAutoLayout */ = {
-			isa = PBXGroup;
-			children = (
-				8437DEC01D534DAA00623EAA /* UITableView+SDAutoTableViewCellHeight.h */,
-				8437DEC11D534DAA00623EAA /* UITableView+SDAutoTableViewCellHeight.m */,
-				8437DEC21D534DAA00623EAA /* UIView+SDAutoLayout.h */,
-				8437DEC31D534DAA00623EAA /* UIView+SDAutoLayout.m */,
-			);
-			path = SDAutoLayout;
-			sourceTree = "<group>";
-		};
 		8437DEC41D534DAA00623EAA /* SDCycleScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1298,6 +1284,17 @@
 			path = XDPopupListView;
 			sourceTree = "<group>";
 		};
+		84E6D0EF1D61B987005859B7 /* SDAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				84E6D0F01D61B987005859B7 /* UITableView+SDAutoTableViewCellHeight.h */,
+				84E6D0F11D61B987005859B7 /* UITableView+SDAutoTableViewCellHeight.m */,
+				84E6D0F21D61B987005859B7 /* UIView+SDAutoLayout.h */,
+				84E6D0F31D61B987005859B7 /* UIView+SDAutoLayout.m */,
+			);
+			path = SDAutoLayout;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1313,11 +1310,9 @@
 				8437E0021D534DAA00623EAA /* SnapKit.h in Headers */,
 				8437DFA51D534DAA00623EAA /* IQKeyboardReturnKeyHandler.h in Headers */,
 				8437DF991D534DAA00623EAA /* IQUITextFieldView+Additions.h in Headers */,
-				8437DFE61D534DAA00623EAA /* UIView+SDAutoLayout.h in Headers */,
 				8437DFEA1D534DAA00623EAA /* TAAbstractDotView.h in Headers */,
 				8437DF071D534DAA00623EAA /* CustomBadge.h in Headers */,
 				8437DF811D534DAA00623EAA /* QBAssetsViewController.h in Headers */,
-				8437DFE41D534DAA00623EAA /* UITableView+SDAutoTableViewCellHeight.h in Headers */,
 				8437DFCD1D534DAA00623EAA /* NSObject+MJProperty.h in Headers */,
 				8437DFA31D534DAA00623EAA /* IQKeyboardManager.h in Headers */,
 				8437DF871D534DAA00623EAA /* QBImagePickerController.h in Headers */,
@@ -1386,6 +1381,8 @@
 				8437DFDB1D534DAA00623EAA /* DWPageControl.h in Headers */,
 				8437DFC91D534DAA00623EAA /* NSObject+MJCoding.h in Headers */,
 				8437DFBC1D534DAA00623EAA /* MJExtension.h in Headers */,
+				84E6D0F61D61B987005859B7 /* UIView+SDAutoLayout.h in Headers */,
+				84E6D0F41D61B987005859B7 /* UITableView+SDAutoTableViewCellHeight.h in Headers */,
 				8437DF551D534DAA00623EAA /* DeviceUtil.h in Headers */,
 				A9F5DCED1D55B78A001D8BD5 /* FileInfo.h in Headers */,
 				8437DD9C1D534D7D00623EAA /* CoreLibrary.h in Headers */,
@@ -1486,12 +1483,11 @@
 				8437DF691D534DAA00623EAA /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				8437DF881D534DAA00623EAA /* QBImagePickerController.m in Sources */,
 				8437DFE11D534DAA00623EAA /* RefreshFooterView.swift in Sources */,
-				8437DF521D534DAA00623EAA /* UIFlatImageTabItem.swift in Sources */,
-				8437DFE71D534DAA00623EAA /* UIView+SDAutoLayout.m in Sources */,
 				8437DF391D534DAA00623EAA /* PPiFlatSegmentedControl.m in Sources */,
 				8437DFDE1D534DAA00623EAA /* RefreshBaseView.swift in Sources */,
 				8437DF441D534DAA00623EAA /* CAPSPageMenu.swift in Sources */,
 				8437DFB01D534DAA00623EAA /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				84E6D0F51D61B987005859B7 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				8437DFBE1D534DAA00623EAA /* MJExtensionConst.m in Sources */,
 				8437DF651D534DAA00623EAA /* UITableView+FDKeyedHeightCache.m in Sources */,
 				8437DF571D534DAA00623EAA /* FlatUIColors.swift in Sources */,
@@ -1518,6 +1514,7 @@
 				8437E00C1D534DAA00623EAA /* LBXScanViewStyle.swift in Sources */,
 				8437DF161D534DAA00623EAA /* Queue.swift in Sources */,
 				8437DFA61D534DAA00623EAA /* IQKeyboardReturnKeyHandler.m in Sources */,
+				84E6D0F71D61B987005859B7 /* UIView+SDAutoLayout.m in Sources */,
 				8437DFD21D534DAA00623EAA /* MMDrawerBarButtonItem.m in Sources */,
 				8437DF8A1D534DAA00623EAA /* QBSlomoIconView.m in Sources */,
 				8437E00D1D534DAA00623EAA /* LBXScanWrapper.swift in Sources */,
@@ -1544,7 +1541,6 @@
 				8437DEF91D534DAA00623EAA /* GoogleWearAlert.swift in Sources */,
 				8437E00B1D534DAA00623EAA /* LBXScanViewController.swift in Sources */,
 				8437DF0C1D534DAA00623EAA /* Disposable.swift in Sources */,
-				8437DFE51D534DAA00623EAA /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				8437DF221D534DAA00623EAA /* UINavigationItem+Bond.swift in Sources */,
 				8437DF0D1D534DAA00623EAA /* DisposableType.swift in Sources */,
 				8437DF961D534DAA00623EAA /* IQNSArray+Sort.m in Sources */,

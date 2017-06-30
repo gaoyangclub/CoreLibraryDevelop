@@ -4,6 +4,7 @@
 //
 //  Created by 高扬 on 15/12/6.
 //  Copyright (c) 2015年 高扬. All rights reserved.
+//  触发离屏渲染的罪魁祸首 用iconfont代替
 //
 
 import UIKit

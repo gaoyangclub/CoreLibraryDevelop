@@ -22,7 +22,7 @@ public enum CompareType {
     case Previous                // 和前一个值比
     case Regular            // 和固定值比
 }
-public class UIColumnChart: UIView {
+public class UIColumnChart: UIView,UIGestureRecognizerDelegate {
    
     public var chartType:ChartType = .Column{
         didSet{
@@ -122,7 +122,7 @@ public class UIColumnChart: UIView {
             chartLabelView.addGestureRecognizer(panGestrue)
             panGestrue.minimumNumberOfTouches = 1
             panGestrue.maximumNumberOfTouches = 1
-            //            panGestrue.delegate = self
+                        panGestrue.delegate = self
         }
         if tapGestrue == nil{
             tapGestrue = UITapGestureRecognizer(target: self, action: "tapHandler:")
@@ -131,35 +131,66 @@ public class UIColumnChart: UIView {
         }
     }
     
-    
-    private var prevTouchPoint:CGPoint!
-    public override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        if touches.count > 0{
-            let nowTouch = touches[touches.startIndex] as UITouch
-            let nowPoint = nowTouch.locationInView(self)
-            
-            let dirtX = abs(nowPoint.x - prevTouchPoint.x)
-            let dirtY = abs(nowPoint.y - prevTouchPoint.y)
-            if  dirtX > dirtY {//横向移动
-                panGestrue.enabled = true
-            }else{
-                panGestrue.enabled = false
-            }
+    public func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+
+        let translation:CGPoint = panGestrue.translationInView(self);
+        let absX:CGFloat = fabs(translation.x);
+        let absY:CGFloat = fabs(translation.y);
+        
+        // 设置滑动有效距离
+//        if (MAX(absX, absY) < 10){
+        
+        if (absX > absY ) {//左右滑动阻止外部交互
+//            if (translation.x<0) {
+//                
+//                //向左滑动
+//            }else{
+//                
+//                //向右滑动
+//            }
+            return false;
+        } else if (absY > absX) {//上下滑动共存
+//            if (translation.y<0) {
+//                
+//                //向上滑动
+//            }else{
+//                
+//                //向下滑动  
+//            }  
+            return true;
         }
+        return true;
     }
     
-    public override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        if touches.count > 0{
-            let prevTouch = touches[touches.startIndex] as UITouch
-            prevTouchPoint = prevTouch.locationInView(self)
-        }
-    }
-    public override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
-        resumePan()
-    }
-    public override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        resumePan()
-    }
+    
+//    private var prevTouchPoint:CGPoint!
+//    public override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+//        if touches.count > 0{
+//            let nowTouch = touches[touches.startIndex] as UITouch
+//            let nowPoint = nowTouch.locationInView(self)
+//            
+//            let dirtX = abs(nowPoint.x - prevTouchPoint.x)
+//            let dirtY = abs(nowPoint.y - prevTouchPoint.y)
+//            if  dirtX > dirtY {//横向移动
+//                panGestrue.enabled = true
+//            }else{
+//                panGestrue.enabled = false
+//            }
+//        }
+//    }
+//    
+//    public override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+//        if touches.count > 0{
+//            let prevTouch = touches[touches.startIndex] as UITouch
+//            prevTouchPoint = prevTouch.locationInView(self)
+//        }
+//    }
+//    public override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
+//        resumePan()
+//    }
+//    public override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+//        resumePan()
+//    }
     
     func tapHandler(sender:UIGestureRecognizer){
         if sender.numberOfTouches() > 0{
@@ -205,15 +236,15 @@ public class UIColumnChart: UIView {
         gestrueArea.removeAllSubViews()
         delegate?.touchChartLineEnd?()//交互结束
         
-        resumePan()
+//        resumePan()
     }
     
-    private func resumePan(){
-        if (panGestrue != nil){
-            panGestrue.enabled = true
-        }
-        prevTouchPoint = nil
-    }
+//    private func resumePan(){
+//        if (panGestrue != nil){
+//            panGestrue.enabled = true
+//        }
+//        prevTouchPoint = nil
+//    }
 
     private func initChartLabel(){
         if chartLabelView == nil{

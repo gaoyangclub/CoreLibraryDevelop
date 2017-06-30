@@ -123,7 +123,7 @@ public class TabViewController: UITabBarController {
         let count = dataProvider?.count
         let subW = Float(self.view.frame.width / CGFloat(count!))
         var preView:UIView? = nil
-        let subViewList:NSMutableArray = []
+//        let subViewList:NSMutableArray = []
         for i in 0..<count!{
 //            var x = CGFloat(i) * subW
             
@@ -150,7 +150,7 @@ public class TabViewController: UITabBarController {
             
 //            subView.sd_layout().heightIs(tabBarHeight)
             
-            subViewList.addObject(subView)
+//            subViewList.addObject(subView)
         }
         
 //        containerView.setupAutoWidthFlowItems(subViewList as [AnyObject],withPerRowItemsCount:subViewList.count,verticalMargin:0,horizontalMargin:0);

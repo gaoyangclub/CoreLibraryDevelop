@@ -123,10 +123,10 @@ public class PageListTableViewController: BaseTableViewController {
 //                    preCellVo = cvo
                 }
                 if !hasFirst {//不存在
-                    (svo.data![0] as! CellVo).cellTag == CellVo.CELL_TAG_FIRST //标记第一个就是
+                    (svo.data![0] as! CellVo).cellTag = CellVo.CELL_TAG_FIRST //标记第一个就是
                 }
                 if !hasLast {
-                    (svo.data![svo.data!.count - 1] as! CellVo).cellTag == CellVo.CELL_TAG_LAST //标记最后一个就是
+                    (svo.data![svo.data!.count - 1] as! CellVo).cellTag = CellVo.CELL_TAG_LAST //标记最后一个就是
                 }
             }
         }

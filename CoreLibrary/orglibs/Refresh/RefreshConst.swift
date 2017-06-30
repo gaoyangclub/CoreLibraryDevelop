@@ -1,9 +1,9 @@
 //
-//  RefreshConst.swift
-//  RefreshExample
+//  RefreshContainer.swift
+//  PullRefreshScrollerTest
 //
-//  Created by SunSet on 14-6-23.
-//  Copyright (c) 2014 zhaokaiyuan. All rights reserved.
+//  Created by 高扬 on 15/10/24.
+//  Copyright (c) 2015年 高扬. All rights reserved.
 //
 
 import Foundation
