@@ -30,6 +30,10 @@
 #include  "XDPopupListView.h"
 #include  "CMPopTipView.h"
 
+#include  "YYFPSLabel.h"
+#include  "YYWeakProxy.h"
+
+
 #include  "UITableView+FDTemplateLayoutCell.h"
 //#ifndef PullRefreshScrollerTest_BridgeHeader_h
 //#define PullRefreshScrollerTest_BridgeHeader_h

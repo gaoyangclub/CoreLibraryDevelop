@@ -287,6 +287,10 @@
 		84E6D0F51D61B987005859B7 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E6D0F11D61B987005859B7 /* UITableView+SDAutoTableViewCellHeight.m */; };
 		84E6D0F61D61B987005859B7 /* UIView+SDAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 84E6D0F21D61B987005859B7 /* UIView+SDAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84E6D0F71D61B987005859B7 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E6D0F31D61B987005859B7 /* UIView+SDAutoLayout.m */; };
+		A9D9614F1F077ED70050FDFB /* YYFPSLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = A9D9614B1F077ED70050FDFB /* YYFPSLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9D961501F077ED70050FDFB /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D9614C1F077ED70050FDFB /* YYFPSLabel.m */; };
+		A9D961511F077ED70050FDFB /* YYWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = A9D9614D1F077ED70050FDFB /* YYWeakProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9D961521F077ED70050FDFB /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D9614E1F077ED70050FDFB /* YYWeakProxy.m */; };
 		A9F5DCBC1D558E98001D8BD5 /* successIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9F5DCBB1D558E98001D8BD5 /* successIcon@2x.png */; };
 		A9F5DCED1D55B78A001D8BD5 /* FileInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F5DCEB1D55B78A001D8BD5 /* FileInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9F5DCEE1D55B78A001D8BD5 /* FileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F5DCEC1D55B78A001D8BD5 /* FileInfo.m */; };
@@ -580,6 +584,10 @@
 		84E6D0F11D61B987005859B7 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
 		84E6D0F21D61B987005859B7 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
 		84E6D0F31D61B987005859B7 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
+		A9D9614B1F077ED70050FDFB /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		A9D9614C1F077ED70050FDFB /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		A9D9614D1F077ED70050FDFB /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		A9D9614E1F077ED70050FDFB /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
 		A9F5DCBB1D558E98001D8BD5 /* successIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "successIcon@2x.png"; sourceTree = "<group>"; };
 		A9F5DCEB1D55B78A001D8BD5 /* FileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileInfo.h; sourceTree = "<group>"; };
 		A9F5DCEC1D55B78A001D8BD5 /* FileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileInfo.m; sourceTree = "<group>"; };
@@ -625,6 +633,7 @@
 		8437DDA31D534DA900623EAA /* orglibs */ = {
 			isa = PBXGroup;
 			children = (
+				A9D9614A1F077ED70050FDFB /* YYFPSLabel */,
 				8437DDA41D534DA900623EAA /* Alert */,
 				8437DDB61D534DAA00623EAA /* Badge */,
 				8437DDBC1D534DAA00623EAA /* Bond */,
@@ -1295,6 +1304,17 @@
 			path = SDAutoLayout;
 			sourceTree = "<group>";
 		};
+		A9D9614A1F077ED70050FDFB /* YYFPSLabel */ = {
+			isa = PBXGroup;
+			children = (
+				A9D9614B1F077ED70050FDFB /* YYFPSLabel.h */,
+				A9D9614C1F077ED70050FDFB /* YYFPSLabel.m */,
+				A9D9614D1F077ED70050FDFB /* YYWeakProxy.h */,
+				A9D9614E1F077ED70050FDFB /* YYWeakProxy.m */,
+			);
+			path = YYFPSLabel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1302,6 +1322,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9D961511F077ED70050FDFB /* YYWeakProxy.h in Headers */,
+				A9D9614F1F077ED70050FDFB /* YYFPSLabel.h in Headers */,
 				8437DF3C1D534DAA00623EAA /* UIAwesomeButton.h in Headers */,
 				8437DF091D534DAA00623EAA /* Bond.h in Headers */,
 				8437DF051D534DAA00623EAA /* BadgeStyle.h in Headers */,
@@ -1535,6 +1557,7 @@
 				8437DF131D534DAA00623EAA /* ObservableArrayEvent.swift in Sources */,
 				8437DF2A1D534DAA00623EAA /* UITextView+Bond.swift in Sources */,
 				8437DF5B1D534DAA00623EAA /* EAIntroPage.m in Sources */,
+				A9D961521F077ED70050FDFB /* YYWeakProxy.m in Sources */,
 				8437DFA01D534DAA00623EAA /* IQUIWindow+Hierarchy.m in Sources */,
 				8437DF781D534DAA00623EAA /* SheetPreviewCollectionViewCell.swift in Sources */,
 				8437DF451D534DAA00623EAA /* CASectionPageMenu.swift in Sources */,
@@ -1605,6 +1628,7 @@
 				8437DFFC1D534DAA00623EAA /* ConstraintMaker.swift in Sources */,
 				8437DF401D534DAA00623EAA /* BaseItemRenderer.swift in Sources */,
 				8437DF111D534DAA00623EAA /* Observable.swift in Sources */,
+				A9D961501F077ED70050FDFB /* YYFPSLabel.m in Sources */,
 				8437DF9A1D534DAA00623EAA /* IQUITextFieldView+Additions.m in Sources */,
 				8437DF561D534DAA00623EAA /* DeviceUtil.m in Sources */,
 				8437DFEB1D534DAA00623EAA /* TAAbstractDotView.m in Sources */,
